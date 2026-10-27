@@ -1,0 +1,327 @@
+
+/* -------------------------
+   GENERAL STYLING
+------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+/* -------------------------
+   HEADER STYLING
+------------------------- */
+
+.header {
+    height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url("Jcstudiopictures/logo.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/* -------------------------
+   NAVIGATION
+------------------------- */
+
+nav {
+    display: flex;
+    padding: 2% 2.5%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 80px;
+    border-radius: 55px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 1px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    margin: auto;
+    transition: width 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+/* -------------------------
+   FLOWERS PAGE HEADING
+------------------------- */
+
+.flower-section {
+    text-align: center;
+    color: #fff;
+    padding: 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+/* -------------------------
+   FLOWERS SECTION
+------------------------- */
+
+.products-section {
+    width: 100%;
+    padding: 40px 6%;
+    background-color: #fff;
+}
+
+.products-section h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #4b0d0d;
+    margin-bottom: 10px;
+}
+
+.section-description {
+    text-align: center;
+    color: #666;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+/* -------------------------
+   FLOWER PRODUCT GRID
+------------------------- */
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    padding: 30px 0;
+}
+
+.product-card {
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 15px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* -------------------------
+   FLOWER IMAGES
+------------------------- */
+
+.product-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* -------------------------
+   FLOWER PRODUCT DETAILS
+------------------------- */
+
+.product-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: rgb(101, 18, 18);
+}
+
+.product-card p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.price {
+    display: block;
+    color: #a00038;
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.loading-message {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 30px 10px;
+    color: #666;
+}
+
+/* -------------------------
+   ANNOUNCEMENT BAR
+------------------------- */
+
+.announcement {
+    background: #ffafcc;
+    text-align: center;
+    padding: 10px;
+    color: #4b0d0d;
+    font-weight: bold;
+}
+
+/* -------------------------
+   FOOTER STYLING
+------------------------- */
+
+.footer {
+    background: linear-gradient(to right, #ffafcc, #ffc8dd);
+    color: #4b0d0d;
+    padding: 50px 8% 20px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 40px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+/* Footer Titles */
+
+.footer-section h3,
+.footer-section h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #a00038;
+    font-weight: 600;
+}
+
+/* About Section */
+
+.footer-section.about p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #4b0d0d;
+    margin-bottom: 15px;
+}
+
+/* Social Icons */
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 18px;
+    color: #4b0d0d;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #d6005a;
+    transform: scale(1.2);
+}
+
+/* Quick Links */
+
+.footer-section.links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section.links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section.links ul li a {
+    text-decoration: none;
+    color: #4b0d0d;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-section.links ul li a:hover {
+    color: #d6005a;
+}
+
+/* Contact Section */
+
+.footer-section.contact p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer-section.contact i {
+    margin-right: 8px;
+    color: #d6005a;
+}
+
+/* Footer Bottom */
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    font-size: 13px;
+    color: #4b0d0d;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+/* -------------------------
+   RESPONSIVE DESIGN
+------------------------- */
+
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-img {
+        height: 230px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+}
