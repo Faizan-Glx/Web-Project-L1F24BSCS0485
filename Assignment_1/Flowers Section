@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jcstudiooo-Flowers</title>
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="flower.css">
+    </head>
+
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="Jcstudio.html"><img class="logo" src="Jcstudiopictures/logo.jpg"></a>
+                <div class="nav-links">
+                    <ul>
+                       <li><a href="Jcstudio.html">HOME</a></li>
+                         <li><a href="">ABOUT</a></li>
+                          <li><a href="products.html">PRODUCTS</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <h1 class="flower-section">FLOWERS</h1>
+
+            <section class="product-grid">
+    <div class="product-card">
+        <img src="pink rose.jpg" alt=" Rose" class="product-img">
+        <h3>Red & Pink Rose Bouquet</h3>
+        <p>Handcrafted crochet rose bouquet perfect for gifting.</p>
+        <span class="price">Rs. 1500</span>
+    </div>
+
+    <div class="product-card">
+        <img src="sunflower.jpg" alt="Sunflower" class="product-img">
+        <h3>Sunflower</h3>
+        <p>Brighten your space with this cheerful crochet Sunflower.</p>
+        <span class="price">Rs. 400</span>
+    </div>
+
+    <div class="product-card">
+        <img src="tulip.jpg" alt="tulip " class="product-img">
+        <h3>Tulips Bunch</h3>
+        <p>Bouquetof Tulips. Great as decor or gifts.</p>
+        <span class="price">Rs. 1300</span>
+    </div>
+    <div class="product-card">
+        <img src="2 sunflower.jpg" alt="Sunflower" class="product-img">
+        <h3>2 Sunflowers</h3>
+        <p>Get yourself 2 Sunflowers.</p>
+        <span class="price">Rs. 800</span>
+    </div>
+
+    <div class="product-card">
+        <img src="vangov.jpg" alt="vangov" class="product-img">
+        <h3>Van Gogh’s Theme Bouquet</h3>
+        <p>“Art meets yarn — bring home Van Gogh’s bloom.”</p>
+        <span class="price">Rs. 1000</span>
+    </div>
+    <div class="product-card">
+        <img src="daisey.jpg" alt="daisey" class="product-img">
+        <h3>Daisey</h3>
+        <p>Daisey Flower</p>
+        <span class="price">Rs. 300</span>
+    </div>
+
+
+
+</section>
+
+
+        </section>
+
+
+
+
+
+
+
+
+    </body>
+</html>
