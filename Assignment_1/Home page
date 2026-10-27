@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JC Studio - Crochet</title>
+    <link rel="stylesheet" href="Jcstudio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+</head>
+
+<body>
+    <!-- HEADER SECTION -->
+     
+
+
+   <section class="header">
+    <nav>
+        <a href="Jcstudio.html">
+            <img class="logo" src="Jcstudiopictures/logo.jpg" alt="JC Studio Logo">
+        </a>
+        <div class="nav-links">
+            <ul>
+                <li><a href="Jcstudio.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="products.html">PRODUCTS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="text-box">
+        <h1>JC STUDIO</h1>
+        <p>“Where Every Stitch says WE CARE”<br>
+            A perfect corner to get your favourite crochet things
+        </p>
+        <a href="products.html" class="button">SHOP NOW</a>
+    </div>
+</section>
+
+
+
+    <!-- PRODUCTS SECTION -->
+    <section class="base">
+        <h1>Products we Offer</h1>
+        <p>
+            Need a flower for someone? We got you. Need a bag to carry your essentials? We got you.
+            Need a keychain to lift up your coolness? We got you. Need cardigans to keep yourself warm? We got you.<br>
+            <strong>IT'S ALL ABOUT YOU.</strong>
+        </p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>FLOWERS</h3>
+                <a href="flowers.html">
+                    <img class="product-img flower" src="Jcstudiopictures/flowers.jpg" alt="Flowers">
+                </a>
+            </div>
+
+            <div class="course-col">
+                <h3>KEYCHAINS</h3>
+                <a href="keychains.html">
+                    <img class="product-img bag" src="sunflowerkeychain.jpg" alt="Keychains">
+                </a>
+            </div>
+
+            <div class="course-col">
+                <h3>CARDIGANS</h3>
+                <a href="cardigans.html">
+                    <img class="product-img cardigan" src="Jcstudiopictures/cardigans.jpg" alt="Cardigans">
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+  <div class="footer-container">
+
+    <!-- About Section -->
+    <div class="footer-section about">
+      <h3>JC Studio</h3>
+      <p>
+        At JC Studio, every stitch says "We Care".  
+        Handcrafted crochet flowers, cardigans, and keychains made with love.
+      </p>
+      <div class="social-icons">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-whatsapp"></i></a>
+      </div>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-section links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="Jcstudio.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="flowers.html">Flowers</a></li>
+        <li><a href="keychains.html">Keychains</a></li>
+        <li><a href="cardigans.html">Cardigans</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-section contact">
+      <h4>Contact Us</h4>
+      <p><i class="fa fa-map-marker"></i> Lahore, Pakistan</p>
+      <p><i class="fa fa-phone"></i> +92 3184206851</p>
+      <p><i class="fa fa-envelope"></i> fk703575@gmail.com</p>
+    </div>
+
+    <!-- Newsletter -->
+    <div class="footer-section newsletter">
+      <h4>Stay Updated</h4>
+      <p>Subscribe to get updates on new arrivals and offers.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 JC Studio | Designed with ❤️ by Jc Studioo</p>
+  </div>
+</footer>
+
+
+</body>
+</html>
