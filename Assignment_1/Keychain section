@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jcstudiooo-Crochet</title>
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="Jcstudio.css">
+    </head>
+
+    <body>
+        <section class="header">
+            <nav>
+
+                <a href="Jcstudio.html"><img class="logo" src="Jcstudiopictures/logo.jpg"></a>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="Jcstudio.html">HOME</a></li>
+                         <li><a href="">ABOUT</a></li>
+                          <li><a href="products.html">PRODUCTS</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            </nav>
+           <h1 class="flower-section">KEYCHAINS</h1>
+
+            <section class="product-grid">
+         <div class="product-card">
+        <img src="star.jpg" alt=" star" class="product-img">
+        <h3>Star Keychain</h3>
+        <p>Handcrafted crochet starkeychain for gifting.</p>
+        <span class="price">Rs. 500</span>
+    </div>
+
+    <div class="product-card">
+        <img src="sunflowerkeychain.jpg" alt="Sunflower" class="product-img">
+        <h3>Sunflower Keychain</h3>
+        <p>Brighten your space with this cheerful crochet Sunflower Keychain.</p>
+        <span class="price">Rs. 500</span>
+    </div>
+
+     <div class="product-card">
+        <img src="strawberry.jpg" alt="strawberry" class="product-img">
+        <h3>Strawberry Keychain</h3>
+        <p>Berry Berry Strawberry Keychain.</p>
+        <span class="price">Rs. 500</span>
+    </div>
+
+
+
+        
+
+
+        
+        
+
+
+        </section>
+
+
+
+
+
+        
+    </section>
+
+
+
+
+
+
+    </body>
+</html>
