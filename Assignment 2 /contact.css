@@ -1,0 +1,421 @@
+/* -------------------------
+   GENERAL STYLING
+------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+/* -------------------------
+   HEADER STYLING
+------------------------- */
+
+.header,
+.sub-header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url("Jcstudiopictures/logo.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/* -------------------------
+   NAVIGATION
+------------------------- */
+
+nav {
+    display: flex;
+    padding: 2% 2.5%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 80px;
+    border-radius: 55px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul {
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 1px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: width 0.4s ease;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+/* -------------------------
+   PRODUCTS DROPDOWN
+------------------------- */
+
+.nav-links ul li.dropdown {
+    position: relative;
+}
+
+.nav-links ul li.dropdown .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 150px;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    z-index: 9999;
+}
+
+.nav-links ul li.dropdown:hover > .dropdown-menu,
+.nav-links ul li.dropdown:focus-within > .dropdown-menu {
+    display: block;
+}
+
+.nav-links ul li.dropdown .dropdown-menu li {
+    display: block;
+    width: 100%;
+    padding: 0;
+}
+
+.nav-links ul li.dropdown .dropdown-menu li a {
+    display: block;
+    padding: 12px 15px;
+    color: #4b0d0d;
+    text-decoration: none;
+    font-size: 13px;
+    text-align: left;
+}
+
+.nav-links ul li.dropdown .dropdown-menu li a:hover {
+    background-color: #ffc8dd;
+    color: #a00038;
+}
+
+.nav-links ul li.dropdown .dropdown-menu li::after {
+    display: none;
+}
+
+/* -------------------------
+   CONTACT PAGE HEADING
+------------------------- */
+
+.contact-heading {
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    font-weight: 600;
+    padding: 10px 20px;
+}
+
+/* -------------------------
+   CONTACT SECTION
+------------------------- */
+
+.contact-us {
+    width: 80%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.contact-us h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #4b0d0d;
+    margin-bottom: 15px;
+}
+
+.contact-us > p {
+    text-align: center;
+    color: #666;
+    font-size: 15px;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.contact-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.contact-col {
+    flex: 1 1 300px;
+    min-width: 0;
+    margin-bottom: 30px;
+}
+
+/* Contact information */
+
+.contact-col div {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.contact-col div h5 {
+    font-size: 18px;
+    margin-bottom: 6px;
+    color: #651212;
+    font-weight: 600;
+}
+
+.contact-col div p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+/* Contact form */
+
+.contact-col form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-col input,
+.contact-col textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    font-family: inherit;
+    font-size: 14px;
+    background: #fff;
+    transition: border-color 0.3s ease;
+}
+
+.contact-col input:focus,
+.contact-col textarea:focus {
+    border-color: #d6005a;
+}
+
+.contact-col textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.contact-col button {
+    align-self: flex-start;
+    padding: 12px 28px;
+    background: #d6005a;
+    border: 1px solid #d6005a;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.contact-col button:hover {
+    background: #a00038;
+    border-color: #a00038;
+    transform: translateY(-2px);
+}
+
+/* -------------------------
+   ANNOUNCEMENT BAR
+------------------------- */
+
+.announcement {
+    background: #ffafcc;
+    text-align: center;
+    padding: 10px;
+    color: #4b0d0d;
+    font-weight: bold;
+}
+
+/* -------------------------
+   FOOTER STYLING
+------------------------- */
+
+.footer {
+    background: linear-gradient(to right, #ffafcc, #ffc8dd);
+    color: #4b0d0d;
+    padding: 50px 8% 20px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 40px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #a00038;
+    font-weight: 600;
+}
+
+.footer-section.about p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #4b0d0d;
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 18px;
+    color: #4b0d0d;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #d6005a;
+    transform: scale(1.2);
+}
+
+.footer-section.links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section.links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section.links ul li a {
+    text-decoration: none;
+    color: #4b0d0d;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-section.links ul li a:hover {
+    color: #d6005a;
+}
+
+.footer-section.contact p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer-section.contact i {
+    margin-right: 8px;
+    color: #d6005a;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    font-size: 13px;
+    color: #4b0d0d;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+
+.contact-section {
+    text-align: center;
+    color: #fff;
+    padding: 10px 20px;
+    padding-top: 100px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.contact-section1 {
+    text-align: center;
+    color: #fff;
+    padding: 10px 20px;
+    padding-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+/* -------------------------
+   RESPONSIVE DESIGN
+------------------------- */
+
+@media (max-width: 768px) {
+    .contact-us {
+        width: 90%;
+        padding: 40px 0;
+    }
+
+    .contact-row {
+        gap: 20px;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-heading {
+        font-size: 28px;
+    }
+
+    nav {
+        padding: 4% 3%;
+    }
+
+    nav img {
+        width: 60px;
+    }
+
+    .nav-links ul li {
+        padding: 1px 5px;
+    }
+
+    .nav-links ul li a {
+        font-size: 11px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+}
